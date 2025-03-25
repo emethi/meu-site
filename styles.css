@@ -193,12 +193,12 @@ button:hover {
 
     .overlay-text h2 {
         font-size: 2rem;
-        margin-bottom: var(--title-margin, 150px);
+        margin-bottom: var(--title-margin, 200px);
     }
 
     /* Corrige o alinhamento à esquerda e ajusta a margem da lista */
     .overlay-text ul {
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: left; /* Alinha o texto à esquerda */
         margin: var(--list-margin-mobile, 20px 20px 20px 20px); /* Margem ajustável via variável */
         align-items: flex-start; /* Corrige o alinhamento dos itens da lista */
