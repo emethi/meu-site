@@ -145,7 +145,6 @@ body {
     height: 40px;
     border-radius: 50%;
 }
-
 /* ======== PÁGINA SOBRE MIM ======== */
 .about-section {
     padding: 200px 10px 10px; /* Espaço para o cabeçalho fixo */
@@ -226,6 +225,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .about-section {
+        padding-top: 100px; /* Reduz o padding-top para telas menores */
+    }
+
     .about-container {
         flex-direction: column;
         text-align: center;
@@ -242,7 +245,6 @@ body {
         margin-bottom: 10px;
     }
 }
-
 /* ======== SEÇÃO EXTRACURRICULAR ======== */
 .extracurricular-section {
     padding: 0px 20px;
