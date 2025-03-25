@@ -1,0 +1,370 @@
+/* styles.css */
+
+/* ======== RESET GERAL ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ======== CONFIGURAÇÕES GERAIS ======== */
+body {
+    font-family: 'Fira Code', monospace;
+    line-height: 1.6;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ======== SEÇÃO SUPERIOR ======== */
+.top-section {
+    background: url('img/secao-superior.png') center/cover no-repeat;
+    background-color: rgba(10, 10, 10, 0.5);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    height: 60vh;
+    text-align: left;
+    position: relative;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #ffffff;
+    animation: float 2s ease-in-out infinite;
+}
+
+p {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #ffffff;
+    animation: float 2s ease-in-out infinite;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+}
+
+button {
+    background: #686868;
+    padding: 8px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bolder;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #6fff00;
+    color: #000;
+}
+
+/* Responsividade da Seção Superior */
+@media (max-width: 768px) {
+    .top-section {
+        padding: 20px;
+        height: 60vh;
+        background-size: cover;
+        background-position: center top;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .button-container {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-section {
+        padding: 15px;
+        height: 50vh;
+        background-size: cover;
+        background-position: center top;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .button-container {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+/* ======== SEÇÃO INFERIOR ======== */
+.bottom-section {
+    position: relative;
+    min-height: 100vh;
+    background: url('img/secao-inferior.png') center/cover no-repeat;
+    background-color: rgba(0, 0, 0, var(--overlay-intensity, 0.5));
+    background-blend-mode: darken;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-text {
+    position: relative;
+    text-align: left;
+    color: #ffffff;
+    z-index: 1;
+    width: 90%;
+    max-width: var(--overlay-width, 1200px);
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.overlay-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 150px;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    font-weight: bolder;
+}
+
+.overlay-text li {
+    margin: 1rem 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #6fff00;
+}
+
+.overlay-text h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: #6fff00;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: var(--title-margin, 0rem); /* Variável para controlar a posição do título */
+    text-align: center;
+    position: relative;
+    padding-top: 0rem;
+}
+
+.list-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+
+/* Responsividade da Seção Inferior */
+@media (max-width: 768px) {
+    .bottom-section {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .overlay-text h2 {
+        font-size: 2rem;
+        margin-bottom: var(--title-margin, 150px);
+    }
+
+    .overlay-text ul {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .bottom-section {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .overlay-text h2 {
+        font-size: 1.5rem;
+        margin-bottom: var(--title-margin, 100px);
+    }
+
+    .overlay-text ul {
+        font-size: 0.9rem;
+    }
+}
+
+/* ======== SEÇÃO MENU ======== */
+.menu-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hamburger {
+    font-size: 1.2rem;
+}
+
+.dropdown-menu {
+    display: block;
+    position: fixed;
+    top: -70vh; /* Ajustado para 70% da tela */
+    left: 0;
+    width: 100%;
+    height: 70vh; /* Menu ocupando 70% da tela */
+    background-color: #575757;
+    z-index: 10;
+    transition: top 0.5s ease-in-out;
+}
+
+.dropdown-menu.active {
+    top: 0;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.dropdown-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    transition: color 0.3s;
+    font-weight: bolder;
+}
+
+.dropdown-menu a:hover {
+    color: #6fff00;
+}
+
+/* Responsividade da Seção Menu */
+@media (max-width: 768px) {
+    .dropdown-menu {
+        height: 70vh; /* Mantém 70% em telas menores */
+    }
+
+    .dropdown-menu a {
+        font-size: 1.2rem;
+    }
+
+    .hamburger {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .dropdown-menu {
+        height: 70vh; /* Mantém 70% em telas menores */
+    }
+
+    .dropdown-menu a {
+        font-size: 1rem;
+    }
+
+    .hamburger {
+        font-size: 0.9rem;
+    }
+}
+
+/* ======== SEÇÃO RODAPÉ ======== */
+footer {
+    background-color: #02425e;
+    text-align: center;
+    padding: var(--footer-padding, 10px);
+    font-family: "Fira Code", monospace;
+}
+
+footer p {
+    color: #c9c9c9;
+    font-size: 1rem;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.social-icons img {
+    width: var(--icon-size, 30px);
+    height: var(--icon-size, 30px);
+    border-radius: 50%;
+}
+
+/* Responsividade da Seção Rodapé */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+
+    .social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icons img {
+        width: 20px;
+        height: 20px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
