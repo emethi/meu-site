@@ -151,8 +151,8 @@ button:hover {
 .overlay-text ul {
     list-style: none;
     padding: 0;
-    margin: 150px; /* Margem padrão para desktop */
-    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    margin: 100px; /* Margem padrão para desktop */
+    font-size: clamp(1.8rem, 2vw, 1.8rem);
     font-weight: bolder;
 }
 
@@ -162,11 +162,11 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #6fff00;
+    color: #ffffff;
 }
 
 .overlay-text h2 {
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(3.5rem, 5vw, 3rem);
     font-weight: 700;
     color: #6fff00;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
@@ -177,8 +177,8 @@ button:hover {
 }
 
 .list-icon {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     flex-shrink: 0;
     filter: brightness(0) saturate(100%) invert(47%) sepia(97%) saturate(1357%) hue-rotate(87deg) brightness(118%) contrast(119%); /* Define a cor dos ícones como #6fff00 */
 }
@@ -193,12 +193,12 @@ button:hover {
 
     .overlay-text h2 {
         font-size: 2rem;
-        margin-bottom: var(--title-margin, 200px);
+        margin-bottom: var(--title-margin, 180px);
     }
 
     /* Corrige o alinhamento à esquerda e ajusta a margem da lista */
     .overlay-text ul {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         text-align: left; /* Alinha o texto à esquerda */
         margin: var(--list-margin-mobile, 20px 20px 20px 20px); /* Margem ajustável via variável */
         align-items: flex-start; /* Corrige o alinhamento dos itens da lista */
@@ -213,13 +213,13 @@ button:hover {
     }
 
     .overlay-text h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-bottom: var(--title-margin, 100px);
     }
 
     /* Mantém o alinhamento à esquerda e ajusta a margem da lista */
     .overlay-text ul {
-        font-size: 0.9rem;
+        font-size: 1rem;
         text-align: left; /* Alinha o texto à esquerda */
         margin: var(--list-margin-mobile, 15px 15px 15px 15px); /* Margem ajustável via variável */
         align-items: flex-start; /* Corrige o alinhamento dos itens da lista */
@@ -282,7 +282,7 @@ button:hover {
     }
 
     .dropdown-menu a {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .hamburger {
