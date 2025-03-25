@@ -233,13 +233,13 @@ body {
 
     .about-text {
         margin-right: 0;
-        margin-bottom: 22px;
+        margin-bottom: 10px;
         padding: 0 10px;
     }
 
     .signature-container {
         transform: translateY(0);
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 }
 
