@@ -151,7 +151,7 @@ button:hover {
 .overlay-text ul {
     list-style: none;
     padding: 0;
-    margin: 150px;
+    margin: 150px; /* Margem padrão para desktop */
     font-size: clamp(1.2rem, 2vw, 1.8rem);
     font-weight: bolder;
 }
@@ -180,8 +180,8 @@ button:hover {
     width: 32px;
     height: 32px;
     flex-shrink: 0;
+    filter: brightness(0) saturate(100%) invert(47%) sepia(97%) saturate(1357%) hue-rotate(87deg) brightness(118%) contrast(119%); /* Define a cor dos ícones como #6fff00 */
 }
-
 
 /* Responsividade da Seção Inferior */
 @media (max-width: 768px) {
@@ -196,9 +196,12 @@ button:hover {
         margin-bottom: var(--title-margin, 150px);
     }
 
+    /* Corrige o alinhamento à esquerda e ajusta a margem da lista */
     .overlay-text ul {
         font-size: 1rem;
-        align-items: start;
+        text-align: left; /* Alinha o texto à esquerda */
+        margin: var(--list-margin-mobile, 20px 20px 20px 20px); /* Margem ajustável via variável */
+        align-items: flex-start; /* Corrige o alinhamento dos itens da lista */
     }
 }
 
@@ -214,9 +217,12 @@ button:hover {
         margin-bottom: var(--title-margin, 100px);
     }
 
+    /* Mantém o alinhamento à esquerda e ajusta a margem da lista */
     .overlay-text ul {
         font-size: 0.9rem;
-        align-items: start;
+        text-align: left; /* Alinha o texto à esquerda */
+        margin: var(--list-margin-mobile, 15px 15px 15px 15px); /* Margem ajustável via variável */
+        align-items: flex-start; /* Corrige o alinhamento dos itens da lista */
     }
 }
 
