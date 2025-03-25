@@ -198,6 +198,7 @@ button:hover {
 
     .overlay-text ul {
         font-size: 1rem;
+        align-items: start;
     }
 }
 
@@ -215,6 +216,7 @@ button:hover {
 
     .overlay-text ul {
         font-size: 0.9rem;
+        align-items: start;
     }
 }
 
