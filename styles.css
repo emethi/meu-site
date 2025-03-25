@@ -198,7 +198,7 @@ button:hover {
 
     /* Corrige o alinhamento à esquerda e ajusta a margem da lista */
     .overlay-text ul {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         text-align: left; /* Alinha o texto à esquerda */
         margin: var(--list-margin-mobile, 20px 20px 20px 20px); /* Margem ajustável via variável */
         align-items: flex-start; /* Corrige o alinhamento dos itens da lista */
@@ -231,6 +231,8 @@ button:hover {
     display: flex;
     align-items: center;
     gap: 8px;
+    box-shadow: 0 0 10px rgba(0, 247, 255, 0.8); /* Sombra brilhosa */
+    background: linear-gradient(45deg, #575757, #383737); /* Gradiente do cinza escuro ao preto */
 }
 
 .hamburger {
@@ -247,6 +249,8 @@ button:hover {
     background-color: #575757;
     z-index: 10;
     transition: top 0.5s ease-in-out;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Sombra brilhosa */
+    background: linear-gradient(45deg, #575757, #383737); /* Gradiente do cinza escuro ao preto */
 }
 
 .dropdown-menu.active {
