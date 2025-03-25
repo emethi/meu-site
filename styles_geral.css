@@ -149,7 +149,7 @@ body {
 
 /* ======== PÁGINA SOBRE MIM ======== */
 .about-section {
-    padding: 200px 10px 10px; /* Espaço para o cabeçalho fixo */
+    padding: 100px 10px 100px; /* Espaço para o cabeçalho fixo */
 }
 
 .about-container {
@@ -193,7 +193,7 @@ body {
     flex-direction: column;
     align-items: center;
     transform: translateY(10px);
-    margin-bottom: 100px;
+    margin-bottom: 20px; /* Reduzi para evitar espaço excessivo */
 }
 
 .profile-pic {
