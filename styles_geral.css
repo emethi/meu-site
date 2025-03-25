@@ -639,7 +639,7 @@ body {
 
 .submit-btn {
     background: #4cb700;
-    border: 2px solid #ff0000;
+    
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
@@ -655,7 +655,7 @@ body {
 }
 
 .social-links {
-    margin-top: 20px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     gap: 20px;
